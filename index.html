@@ -8,16 +8,16 @@
   </head>
   <body>
     <h1>Reading List</h1>
-    <form id="book-form">
+    <form id="book-form" name="form" onsubmit="return(validate());">
       <div id="form-wrapper">
         <div class="form-item">
           <label for="title" class="primary">Title</label>
-          <input type="text" id="title" required/>
+          <input type="text" id="title" name="title" required/>
         </div>
 
         <div class="form-item">
           <label for="author" class="primary">Author</label>
-          <input type="text" id="author" required/>
+          <input type="text" id="author" name="author" required/>
         </div>
 
         <div class="form-item">
